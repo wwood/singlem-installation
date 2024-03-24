@@ -1,0 +1,15 @@
+INFO:    Using cached SIF image
+03/24/2024 08:39:10 PM INFO: SingleM v0.16.0
+03/24/2024 08:39:10 PM INFO: Retrieval successful. Location of backpack is: /singlem/db/S3.2.1.GTDB_r214.metapackage_20231006.smpkg.zb
+Traceback (most recent call last):
+  File "/singlem/bin/singlem", line 658, in <module>
+    singlem.pipe.SearchPipe().run(
+  File "/singlem/bin/../singlem/pipe.py", line 63, in run
+    metapackage = self._parse_packages_or_metapackage(**kwargs)
+  File "/singlem/bin/../singlem/pipe.py", line 105, in _parse_packages_or_metapackage
+    return Metapackage.acquire_default()
+  File "/singlem/bin/../singlem/metapackage.py", line 72, in acquire_default
+    return Metapackage.acquire(backpack.payload_directory_string())
+  File "/singlem/bin/../singlem/metapackage.py", line 77, in acquire
+    with open(os.path.join(
+PermissionError: [Errno 13] Permission denied: '/singlem/db/S3.2.1.GTDB_r214.metapackage_20231006.smpkg.zb/payload_directory/CONTENTS.json'

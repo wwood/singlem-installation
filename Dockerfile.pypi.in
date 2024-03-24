@@ -1,0 +1,44 @@
+FROM ubuntu:22.04
+
+# install miniconda
+RUN apt-get update \
+    && apt-get install -y build-essential \
+    && apt-get install -y wget
+    # && apt-get clean \
+    # && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get install -y python3-pip
+
+RUN pip install singlem==SINGLEM_VERSION
+
+# Run singlem data to download database
+RUN mkdir singlem_db
+RUN singlem data --output-directory singlem_db
+
+# Install non-python dependencies of SingleM via conda
+ENV CONDA_DIR /opt/conda
+RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh && \
+    /bin/bash ~/miniconda.sh -b -p /opt/conda
+
+# Put conda in path so we can use conda activate
+ENV PATH=$CONDA_DIR/bin:$PATH
+
+# install non-python singlem dependencies for pipe mode
+RUN conda create -y -c bioconda -c conda-forge -n singlem \
+    diamond \
+    hmmer \
+    orfm \
+    mfqe \
+    krona \
+    smafa
+
+# Download some example data so we can test the installation
+RUN wget https://github.com/wwood/singlem/raw/1d204f7ef1b90435a51cdadc18d37791fbff4c9b/docker/test.fna
+
+# activate the singlem environment
+RUN echo "source activate singlem" > ~/.bashrc
+ENV PATH=$CONDA_DIR/envs/singlem/bin:$PATH
+
+# Run pipe
+RUN singlem pipe --forward test.fna --metapackage singlem_db/* --otu-table /dev/stdout
+  

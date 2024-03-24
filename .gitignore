@@ -1,0 +1,4 @@
+Dockerfile.conda
+singlem_*sif
+test.fna
+Dockerfile.pypi
