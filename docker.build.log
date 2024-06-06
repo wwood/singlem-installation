@@ -1,124 +1,23 @@
-0.16.0: Pulling from wwood/singlem
-a603fa5e3b41: Pulling fs layer
-f4e6c07683b9: Pulling fs layer
-c8d9f3f6fdb9: Pulling fs layer
-a54a0971e64a: Pulling fs layer
-a4a2977839e7: Pulling fs layer
-a54a0971e64a: Waiting
-02c6daa3b749: Pulling fs layer
-a4a2977839e7: Waiting
-4f4fb700ef54: Pulling fs layer
-02c6daa3b749: Waiting
-86f40045fa70: Pulling fs layer
-4f4fb700ef54: Waiting
-828182a9456e: Pulling fs layer
-86f40045fa70: Waiting
-9a8388eaf351: Pulling fs layer
-828182a9456e: Waiting
-21f8001a21f8: Pulling fs layer
-9a8388eaf351: Waiting
-2a6c518b46de: Pulling fs layer
-36bfdaf3469b: Pulling fs layer
-21f8001a21f8: Waiting
-576df5930bf8: Pulling fs layer
-2a6c518b46de: Waiting
-36bfdaf3469b: Waiting
-ff4e73e44405: Pulling fs layer
-576df5930bf8: Waiting
-53b5e907307f: Pulling fs layer
-ff4e73e44405: Waiting
-6e7b56720582: Pulling fs layer
-53b5e907307f: Waiting
-60532c8cb2e1: Pulling fs layer
-740bfabb1492: Pulling fs layer
-6e7b56720582: Waiting
-b3ae01230503: Pulling fs layer
-60532c8cb2e1: Waiting
-740bfabb1492: Waiting
-499c2b679b26: Pulling fs layer
-b3ae01230503: Waiting
-b5a761dc5547: Pulling fs layer
-499c2b679b26: Waiting
-b5a761dc5547: Waiting
-f4e6c07683b9: Verifying Checksum
-f4e6c07683b9: Download complete
-c8d9f3f6fdb9: Verifying Checksum
-c8d9f3f6fdb9: Download complete
-a603fa5e3b41: Download complete
-a54a0971e64a: Verifying Checksum
-a54a0971e64a: Download complete
-a4a2977839e7: Verifying Checksum
-a4a2977839e7: Download complete
-02c6daa3b749: Download complete
-a603fa5e3b41: Pull complete
-f4e6c07683b9: Pull complete
-c8d9f3f6fdb9: Pull complete
-a54a0971e64a: Pull complete
-a4a2977839e7: Pull complete
-02c6daa3b749: Pull complete
-4f4fb700ef54: Verifying Checksum
-4f4fb700ef54: Download complete
-4f4fb700ef54: Pull complete
-86f40045fa70: Verifying Checksum
-86f40045fa70: Download complete
-86f40045fa70: Pull complete
-828182a9456e: Download complete
-828182a9456e: Pull complete
-9a8388eaf351: Verifying Checksum
-9a8388eaf351: Download complete
-9a8388eaf351: Pull complete
-21f8001a21f8: Download complete
-21f8001a21f8: Pull complete
-2a6c518b46de: Verifying Checksum
-2a6c518b46de: Download complete
-36bfdaf3469b: Verifying Checksum
-36bfdaf3469b: Download complete
-2a6c518b46de: Pull complete
-36bfdaf3469b: Pull complete
-ff4e73e44405: Download complete
-6e7b56720582: Verifying Checksum
-6e7b56720582: Download complete
-53b5e907307f: Verifying Checksum
-53b5e907307f: Download complete
-740bfabb1492: Download complete
-b3ae01230503: Verifying Checksum
-b3ae01230503: Download complete
-499c2b679b26: Verifying Checksum
-499c2b679b26: Download complete
-b5a761dc5547: Verifying Checksum
-b5a761dc5547: Download complete
-60532c8cb2e1: Verifying Checksum
-60532c8cb2e1: Download complete
-576df5930bf8: Verifying Checksum
-576df5930bf8: Download complete
-576df5930bf8: Pull complete
-ff4e73e44405: Pull complete
-53b5e907307f: Pull complete
-6e7b56720582: Pull complete
-60532c8cb2e1: Pull complete
-740bfabb1492: Pull complete
-b3ae01230503: Pull complete
-499c2b679b26: Pull complete
-b5a761dc5547: Pull complete
-Digest: sha256:2cd5e260a6f3e565231406a64b7873ce3f274ae753a784f7ac19c368f3b16935
-Status: Downloaded newer image for wwood/singlem:0.16.0
-docker.io/wwood/singlem:0.16.0
-03/24/2024 10:38:27 AM INFO: SingleM v0.16.0
-03/24/2024 10:38:27 AM INFO: Retrieval successful. Location of backpack is: /singlem/db/S3.2.1.GTDB_r214.metapackage_20231006.smpkg.zb
-03/24/2024 10:38:27 AM INFO: Loaded 59 SingleM packages
-03/24/2024 10:38:27 AM INFO: Using as input 1 different sequence files e.g. /data/test.fna
-03/24/2024 10:38:27 AM INFO: Filtering sequence files through DIAMOND blastx
-03/24/2024 10:38:28 AM INFO: Finished DIAMOND prefilter phase
-03/24/2024 10:38:28 AM INFO: Assigning sequences to SingleM packages with DIAMOND ..
-03/24/2024 10:38:32 AM INFO: Running taxonomic assignment ..
-03/24/2024 10:38:32 AM INFO: Assigning taxonomy by singlem query ..
-03/24/2024 10:38:40 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
-03/24/2024 10:38:40 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
-03/24/2024 10:38:40 AM INFO: Querying index for S3.10.ribosomal_protein_S19_rpsS
-03/24/2024 10:38:40 AM INFO: Finished running singlem query-based taxonomic assignment, now running diamond ..
-03/24/2024 10:38:40 AM INFO: Assigning taxonomy with DIAMOND for 1 out of 1 sequences (100.0%) for sample test, package S3.10.ribosomal_protein_S19_rpsS.spkg
-03/24/2024 10:38:41 AM INFO: Finished running taxonomic assignment
-03/24/2024 10:38:42 AM INFO: Finished
+0.18.0: Pulling from wwood/singlem
+Digest: sha256:e3cc1eafa502af5a57a5c5fc551ec35e382468c40c5d0e355cea8c7b0657c32c
+Status: Image is up to date for wwood/singlem:0.18.0
+docker.io/wwood/singlem:0.18.0
+06/06/2024 05:23:35 AM INFO: SingleM v0.18.0
+06/06/2024 05:23:35 AM INFO: Retrieval successful. Location of backpack is: /singlem/db/S4.3.0.GTDB_r220.metapackage_20240523.smpkg.zb
+06/06/2024 05:23:35 AM INFO: Loaded 59 SingleM packages
+06/06/2024 05:23:35 AM INFO: Using as input 1 different sequence files e.g. /data/test.fna
+06/06/2024 05:23:35 AM INFO: Filtering sequence files through DIAMOND blastx
+06/06/2024 05:23:36 AM INFO: Finished DIAMOND prefilter phase
+06/06/2024 05:23:36 AM INFO: Assigning sequences to SingleM packages with DIAMOND ..
+06/06/2024 05:23:39 AM INFO: Running taxonomic assignment ..
+06/06/2024 05:23:39 AM INFO: Assigning taxonomy by singlem query ..
+06/06/2024 05:23:51 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+06/06/2024 05:23:51 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+06/06/2024 05:23:51 AM INFO: Querying index for S3.10.ribosomal_protein_S19_rpsS
+06/06/2024 05:23:51 AM INFO: Finished running singlem query-based taxonomic assignment, now running diamond ..
+06/06/2024 05:23:51 AM INFO: Assigning taxonomy with DIAMOND for 1 out of 1 sequences (100.0%) for sample test, package S3.10.ribosomal_protein_S19_rpsS.spkg
+06/06/2024 05:23:52 AM INFO: Finished running taxonomic assignment
+06/06/2024 05:23:53 AM INFO: Finished
 gene	sample	sequence	num_hits	coverage	taxonomy
-S3.10.ribosomal_protein_S19_rpsS	test	GGATCGCGCCGTTCGATGATCACCCCTGACTTCATCGGACACACGTTCGCAGTTCACGAT	1	1.65	Root; d__Bacteria; p__Actinomycetota; c__Actinomycetia; o__Actinomycetales; f__Bifidobacteriaceae
-03/24/2024 10:38:42 AM INFO: Writing /dev/stdout
+S3.10.ribosomal_protein_S19_rpsS	test	GGATCGCGCCGTTCGATGATCACCCCTGACTTCATCGGACACACGTTCGCAGTTCACGAT	1	1.65	Root; d__Bacteria; p__Actinomycetota; c__Actinomycetes; o__Actinomycetales; f__Bifidobacteriaceae
+06/06/2024 05:23:53 AM INFO: Writing /dev/stdout

@@ -1,0 +1,2 @@
+gene	sample	sequence	num_hits	coverage	taxonomy
+S3.10.ribosomal_protein_S19_rpsS	test	GGATCGCGCCGTTCGATGATCACCCCTGACTTCATCGGACACACGTTCGCAGTTCACGAT	1	1.65	Root; d__Bacteria; p__Actinomycetota; c__Actinomycetes; o__Actinomycetales; f__Bifidobacteriaceae
