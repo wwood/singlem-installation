@@ -1,23 +1,31 @@
-0.18.0: Pulling from wwood/singlem
-Digest: sha256:e3cc1eafa502af5a57a5c5fc551ec35e382468c40c5d0e355cea8c7b0657c32c
-Status: Image is up to date for wwood/singlem:0.18.0
-docker.io/wwood/singlem:0.18.0
-06/06/2024 05:23:35 AM INFO: SingleM v0.18.0
-06/06/2024 05:23:35 AM INFO: Retrieval successful. Location of backpack is: /singlem/db/S4.3.0.GTDB_r220.metapackage_20240523.smpkg.zb
-06/06/2024 05:23:35 AM INFO: Loaded 59 SingleM packages
-06/06/2024 05:23:35 AM INFO: Using as input 1 different sequence files e.g. /data/test.fna
-06/06/2024 05:23:35 AM INFO: Filtering sequence files through DIAMOND blastx
-06/06/2024 05:23:36 AM INFO: Finished DIAMOND prefilter phase
-06/06/2024 05:23:36 AM INFO: Assigning sequences to SingleM packages with DIAMOND ..
-06/06/2024 05:23:39 AM INFO: Running taxonomic assignment ..
-06/06/2024 05:23:39 AM INFO: Assigning taxonomy by singlem query ..
-06/06/2024 05:23:51 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
-06/06/2024 05:23:51 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
-06/06/2024 05:23:51 AM INFO: Querying index for S3.10.ribosomal_protein_S19_rpsS
-06/06/2024 05:23:51 AM INFO: Finished running singlem query-based taxonomic assignment, now running diamond ..
-06/06/2024 05:23:51 AM INFO: Assigning taxonomy with DIAMOND for 1 out of 1 sequences (100.0%) for sample test, package S3.10.ribosomal_protein_S19_rpsS.spkg
-06/06/2024 05:23:52 AM INFO: Finished running taxonomic assignment
-06/06/2024 05:23:53 AM INFO: Finished
+0.18.1: Pulling from wwood/singlem
+230a21a597a5: Pulling fs layer
+5fad8470095d: Pulling fs layer
+5fad8470095d: Verifying Checksum
+5fad8470095d: Download complete
+230a21a597a5: Verifying Checksum
+230a21a597a5: Download complete
+230a21a597a5: Pull complete
+5fad8470095d: Pull complete
+Digest: sha256:cf4f27f9239285e69ff1c3bb276a2c1bc76cd2ae5b5eec8312ca7bb21ad94ca8
+Status: Downloaded newer image for wwood/singlem:0.18.1
+docker.io/wwood/singlem:0.18.1
+07/15/2024 09:53:13 PM INFO: SingleM v0.18.1
+07/15/2024 09:53:13 PM INFO: Retrieval successful. Location of backpack is: /singlem/db/S4.3.0.GTDB_r220.metapackage_20240523.smpkg.zb
+07/15/2024 09:53:13 PM INFO: Loaded 59 SingleM packages
+07/15/2024 09:53:13 PM INFO: Using as input 1 different sequence files e.g. /data/test.fna
+07/15/2024 09:53:13 PM INFO: Filtering sequence files through DIAMOND blastx
+07/15/2024 09:53:14 PM INFO: Finished DIAMOND prefilter phase
+07/15/2024 09:53:14 PM INFO: Assigning sequences to SingleM packages with DIAMOND ..
+07/15/2024 09:53:17 PM INFO: Running taxonomic assignment ..
+07/15/2024 09:53:17 PM INFO: Assigning taxonomy by singlem query ..
+07/15/2024 09:53:26 PM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+07/15/2024 09:53:26 PM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+07/15/2024 09:53:26 PM INFO: Querying index for S3.10.ribosomal_protein_S19_rpsS
+07/15/2024 09:53:26 PM INFO: Finished running singlem query-based taxonomic assignment, now running diamond ..
+07/15/2024 09:53:26 PM INFO: Assigning taxonomy with DIAMOND for 1 out of 1 sequences (100.0%) for sample test, package S3.10.ribosomal_protein_S19_rpsS.spkg
+07/15/2024 09:53:28 PM INFO: Finished running taxonomic assignment
+07/15/2024 09:53:28 PM INFO: Finished
+07/15/2024 09:53:29 PM INFO: Writing /dev/stdout
 gene	sample	sequence	num_hits	coverage	taxonomy
 S3.10.ribosomal_protein_S19_rpsS	test	GGATCGCGCCGTTCGATGATCACCCCTGACTTCATCGGACACACGTTCGCAGTTCACGAT	1	1.65	Root; d__Bacteria; p__Actinomycetota; c__Actinomycetes; o__Actinomycetales; f__Bifidobacteriaceae
-06/06/2024 05:23:53 AM INFO: Writing /dev/stdout

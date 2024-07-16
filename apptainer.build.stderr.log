@@ -1,18 +1,18 @@
 INFO:    Using cached SIF image
-06/06/2024 08:18:24 PM INFO: SingleM v0.18.0
-06/06/2024 08:18:24 PM INFO: Retrieval successful. Location of backpack is: /singlem/db/S4.3.0.GTDB_r220.metapackage_20240523.smpkg.zb
-06/06/2024 08:18:24 PM INFO: Loaded 59 SingleM packages
-06/06/2024 08:18:24 PM INFO: Using as input 1 different sequence files e.g. /home/ben/git/singlem-installation/test.fna
-06/06/2024 08:18:24 PM INFO: Filtering sequence files through DIAMOND blastx
-06/06/2024 08:18:25 PM INFO: Finished DIAMOND prefilter phase
-06/06/2024 08:18:25 PM INFO: Assigning sequences to SingleM packages with DIAMOND ..
-06/06/2024 08:18:29 PM INFO: Running taxonomic assignment ..
-06/06/2024 08:18:29 PM INFO: Assigning taxonomy by singlem query ..
-06/06/2024 08:18:29 PM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
-06/06/2024 08:18:29 PM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
-06/06/2024 08:18:29 PM INFO: Querying index for S3.10.ribosomal_protein_S19_rpsS
-06/06/2024 08:18:32 PM INFO: Finished running singlem query-based taxonomic assignment, now running diamond ..
-06/06/2024 08:18:32 PM INFO: Assigning taxonomy with DIAMOND for 1 out of 1 sequences (100.0%) for sample test, package S3.10.ribosomal_protein_S19_rpsS.spkg
-06/06/2024 08:18:33 PM INFO: Finished running taxonomic assignment
-06/06/2024 08:18:34 PM INFO: Finished
-06/06/2024 08:18:34 PM INFO: Writing /dev/stdout
+07/16/2024 11:13:45 AM INFO: SingleM v0.18.1
+07/16/2024 11:13:45 AM INFO: Retrieval successful. Location of backpack is: /singlem/db/S4.3.0.GTDB_r220.metapackage_20240523.smpkg.zb
+07/16/2024 11:13:46 AM INFO: Loaded 59 SingleM packages
+07/16/2024 11:13:46 AM INFO: Using as input 1 different sequence files e.g. /home/ben/git/singlem-installation/test.fna
+07/16/2024 11:13:46 AM INFO: Filtering sequence files through DIAMOND blastx
+07/16/2024 11:13:47 AM INFO: Finished DIAMOND prefilter phase
+07/16/2024 11:13:47 AM INFO: Assigning sequences to SingleM packages with DIAMOND ..
+07/16/2024 11:13:50 AM INFO: Running taxonomic assignment ..
+07/16/2024 11:13:50 AM INFO: Assigning taxonomy by singlem query ..
+07/16/2024 11:13:51 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+07/16/2024 11:13:51 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+07/16/2024 11:13:51 AM INFO: Querying index for S3.10.ribosomal_protein_S19_rpsS
+07/16/2024 11:13:54 AM INFO: Finished running singlem query-based taxonomic assignment, now running diamond ..
+07/16/2024 11:13:54 AM INFO: Assigning taxonomy with DIAMOND for 1 out of 1 sequences (100.0%) for sample test, package S3.10.ribosomal_protein_S19_rpsS.spkg
+07/16/2024 11:13:55 AM INFO: Finished running taxonomic assignment
+07/16/2024 11:13:55 AM INFO: Finished
+07/16/2024 11:13:56 AM INFO: Writing /dev/stdout
