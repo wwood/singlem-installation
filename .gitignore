@@ -2,3 +2,5 @@ Dockerfile.conda
 singlem_*sif
 test.fna
 Dockerfile.pypi
+lambda_phage.fna
+lyrebird_0.19.0.sif

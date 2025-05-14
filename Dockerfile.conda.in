@@ -15,7 +15,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 ENV PATH=$CONDA_DIR/bin:$PATH
 
 # install singlem and dependencies
-RUN conda create -y -c bioconda -c conda-forge -n singlem singlem'>='SINGLEM_VERSION
+RUN conda create -y -c bioconda -c conda-forge -n singlem singlem'='SINGLEM_VERSION
 
 # Download some example data so we can test the installation
 RUN wget https://github.com/wwood/singlem/raw/1d204f7ef1b90435a51cdadc18d37791fbff4c9b/docker/test.fna
@@ -30,4 +30,8 @@ RUN singlem data --output-directory singlem_db
 
 # Run pipe
 RUN singlem pipe --forward test.fna --metapackage singlem_db/* --otu-table /dev/stdout
-  
+
+# And lyrebird
+RUN lyrebird data --output-directory lyrebird_db
+RUN wget https://github.com/wwood/singlem/raw/91b0bde241d5ffc845c76a590a68041c7dc2a13e/docker/lambda_phage.fna
+RUN lyrebird pipe --genome-fasta-file lambda_phage.fna --metapackage lyrebird_db/* --otu-table /dev/stdout

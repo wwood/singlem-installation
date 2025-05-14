@@ -25,7 +25,7 @@ ENV PATH=$CONDA_DIR/bin:$PATH
 
 # install non-python singlem dependencies for pipe mode
 RUN conda create -y -c bioconda -c conda-forge -n singlem \
-    diamond \
+    diamond==2.1.10 \
     hmmer \
     orfm \
     mfqe \
@@ -41,4 +41,8 @@ ENV PATH=$CONDA_DIR/envs/singlem/bin:$PATH
 
 # Run pipe
 RUN singlem pipe --forward test.fna --metapackage singlem_db/* --otu-table /dev/stdout
-  
+
+# And lyrebird
+RUN lyrebird data --output-directory lyrebird_db
+RUN wget https://github.com/wwood/singlem/raw/91b0bde241d5ffc845c76a590a68041c7dc2a13e/docker/lambda_phage.fna
+RUN lyrebird pipe --genome-fasta-file lambda_phage.fna --metapackage lyrebird_db/* --otu-table /dev/stdout

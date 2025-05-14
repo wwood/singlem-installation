@@ -1,23 +1,228 @@
-0.18.2: Pulling from wwood/singlem
-Digest: sha256:b1d2cf554ef8bea77756e69dfbc4e85742ed7009b76243e8165a87be5fcdb362
-Status: Image is up to date for wwood/singlem:0.18.2
-docker.io/wwood/singlem:0.18.2
-07/18/2024 06:31:17 AM INFO: SingleM v0.18.2
-07/18/2024 06:31:17 AM INFO: Retrieval successful. Location of backpack is: /singlem/db/S4.3.0.GTDB_r220.metapackage_20240523.smpkg.zb
-07/18/2024 06:31:17 AM INFO: Loaded 59 SingleM packages
-07/18/2024 06:31:17 AM INFO: Using as input 1 different sequence files e.g. /data/test.fna
-07/18/2024 06:31:17 AM INFO: Filtering sequence files through DIAMOND blastx
-07/18/2024 06:31:18 AM INFO: Finished DIAMOND prefilter phase
-07/18/2024 06:31:18 AM INFO: Assigning sequences to SingleM packages with DIAMOND ..
-07/18/2024 06:31:21 AM INFO: Running taxonomic assignment ..
-07/18/2024 06:31:21 AM INFO: Assigning taxonomy by singlem query ..
-07/18/2024 06:31:29 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
-07/18/2024 06:31:29 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
-07/18/2024 06:31:29 AM INFO: Querying index for S3.10.ribosomal_protein_S19_rpsS
-07/18/2024 06:31:30 AM INFO: Finished running singlem query-based taxonomic assignment, now running diamond ..
-07/18/2024 06:31:30 AM INFO: Assigning taxonomy with DIAMOND for 1 out of 1 sequences (100.0%) for sample test, package S3.10.ribosomal_protein_S19_rpsS.spkg
-07/18/2024 06:31:31 AM INFO: Finished running taxonomic assignment
-07/18/2024 06:31:32 AM INFO: Finished
-07/18/2024 06:31:32 AM INFO: Writing /dev/stdout
+0.19.0: Pulling from wwood/singlem
+ce5b6006bc44: Pulling fs layer
+0b8af1593a6e: Pulling fs layer
+e934e95738c6: Pulling fs layer
+8a0a90d6aacc: Pulling fs layer
+8ac6c07ad3a0: Pulling fs layer
+659acda35d69: Pulling fs layer
+8a0a90d6aacc: Waiting
+8ac6c07ad3a0: Waiting
+659acda35d69: Waiting
+0b8af1593a6e: Download complete
+e934e95738c6: Verifying Checksum
+e934e95738c6: Download complete
+8a0a90d6aacc: Verifying Checksum
+8a0a90d6aacc: Download complete
+8ac6c07ad3a0: Verifying Checksum
+8ac6c07ad3a0: Download complete
+659acda35d69: Verifying Checksum
+659acda35d69: Download complete
+ce5b6006bc44: Verifying Checksum
+ce5b6006bc44: Download complete
+ce5b6006bc44: Pull complete
+0b8af1593a6e: Pull complete
+e934e95738c6: Pull complete
+8a0a90d6aacc: Pull complete
+8ac6c07ad3a0: Pull complete
+659acda35d69: Pull complete
+Digest: sha256:863d73c9cb8b99c70464871147f2f9ad9d42b1c41967650cb1f9f2e2125c0820
+Status: Downloaded newer image for wwood/singlem:0.19.0
+docker.io/wwood/singlem:0.19.0
+05/14/2025 12:56:19 AM INFO: SingleM v0.19.0
+05/14/2025 12:56:19 AM INFO: Retrieval successful. Location of backpack is: /singlem/db/S5.4.0.GTDB_r226.metapackage_20250331.smpkg.zb
+05/14/2025 12:56:19 AM INFO: Loaded 59 SingleM packages
+05/14/2025 12:56:19 AM INFO: Using as input 1 different sequence files e.g. /data/test.fna
+05/14/2025 12:56:19 AM INFO: Filtering sequence files through DIAMOND blastx
+05/14/2025 12:56:20 AM INFO: Finished DIAMOND prefilter phase
+05/14/2025 12:56:20 AM INFO: Assigning sequences to SingleM packages with DIAMOND ..
+05/14/2025 12:56:24 AM INFO: Running taxonomic assignment ..
+05/14/2025 12:56:24 AM INFO: Assigning taxonomy by singlem query ..
+05/14/2025 12:56:31 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:56:31 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:56:31 AM INFO: Querying index for S3.10.ribosomal_protein_S19_rpsS
+05/14/2025 12:56:32 AM INFO: Finished running singlem query-based taxonomic assignment, now running diamond ..
+05/14/2025 12:56:32 AM INFO: Assigning taxonomy with DIAMOND for 1 out of 1 sequences (100.0%) for sample test, package S3.10.ribosomal_protein_S19_rpsS.spkg
+05/14/2025 12:56:33 AM INFO: Finished running taxonomic assignment
+05/14/2025 12:56:33 AM INFO: Finished
+05/14/2025 12:56:33 AM INFO: Writing /dev/stdout
 gene	sample	sequence	num_hits	coverage	taxonomy
 S3.10.ribosomal_protein_S19_rpsS	test	GGATCGCGCCGTTCGATGATCACCCCTGACTTCATCGGACACACGTTCGCAGTTCACGAT	1	1.65	Root; d__Bacteria; p__Actinomycetota; c__Actinomycetes; o__Actinomycetales; f__Bifidobacteriaceae
+=== Testing lyrebird ===
+0.19.0: Pulling from wwood/lyrebird
+cdcecd2184c0: Pulling fs layer
+9346ad6254da: Pulling fs layer
+2e6d4e71db81: Pulling fs layer
+a005d58d5832: Pulling fs layer
+535188368879: Pulling fs layer
+1a506f6916fd: Pulling fs layer
+535188368879: Waiting
+a005d58d5832: Waiting
+1a506f6916fd: Waiting
+9346ad6254da: Download complete
+2e6d4e71db81: Verifying Checksum
+2e6d4e71db81: Download complete
+a005d58d5832: Verifying Checksum
+a005d58d5832: Download complete
+535188368879: Verifying Checksum
+535188368879: Download complete
+1a506f6916fd: Verifying Checksum
+1a506f6916fd: Download complete
+cdcecd2184c0: Verifying Checksum
+cdcecd2184c0: Download complete
+cdcecd2184c0: Pull complete
+9346ad6254da: Pull complete
+2e6d4e71db81: Pull complete
+a005d58d5832: Pull complete
+535188368879: Pull complete
+1a506f6916fd: Pull complete
+Digest: sha256:79a43bc392b56edd58447e714a5df0848d7e6d86f24e7eca60c0d9c526fd1635
+Status: Downloaded newer image for wwood/lyrebird:0.19.0
+docker.io/wwood/lyrebird:0.19.0
+05/14/2025 12:57:37 AM INFO: Lyrebird v0.19.0
+05/14/2025 12:57:37 AM INFO: Retrieval successful. Location of backpack is: /singlem/db/phrog4.1_v0.2.2024_11_7.smpkg.zb
+05/14/2025 12:57:37 AM INFO: Loaded 630 SingleM packages
+05/14/2025 12:57:37 AM INFO: Calling rough transcriptome of genome FASTA files
+05/14/2025 12:57:37 AM INFO: Using as input 1 different genomes e.g. /data/lambda_phage.fna
+05/14/2025 12:57:37 AM INFO: Filtering sequence files through DIAMOND blastx
+05/14/2025 12:57:40 AM INFO: Finished DIAMOND prefilter phase
+05/14/2025 12:57:40 AM INFO: Assigning sequences to SingleM packages with DIAMOND ..
+05/14/2025 12:57:43 AM INFO: Removing duplicate sequences from rough transcriptome ..
+05/14/2025 12:57:44 AM INFO: Running taxonomic assignment ..
+05/14/2025 12:57:44 AM INFO: Assigning taxonomy by singlem query ..
+05/14/2025 12:57:45 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:45 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:45 AM INFO: Querying index for phrog_13
+05/14/2025 12:57:45 AM INFO: Loading taxonomy cache
+05/14/2025 12:57:46 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:46 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:46 AM INFO: Querying index for phrog_21
+05/14/2025 12:57:46 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:46 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:46 AM INFO: Querying index for phrog_24
+05/14/2025 12:57:46 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:46 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:46 AM INFO: Querying index for phrog_27
+05/14/2025 12:57:46 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:46 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:46 AM INFO: Querying index for phrog_30
+05/14/2025 12:57:46 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:46 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:46 AM INFO: Querying index for phrog_31
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_32
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_37
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_39
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_49
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_53
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_72
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_77
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_82
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_90
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_105
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_108
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_171
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_252
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_295
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_345
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_381
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_454
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_2148
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_2353
+05/14/2025 12:57:47 AM INFO: Querying against species database with 1 sequences, using method smafa-naive and max divergence 2
+05/14/2025 12:57:47 AM INFO: Searching with SMAFA NAIVE by nucleotide sequence ..
+05/14/2025 12:57:47 AM INFO: Querying index for phrog_8940
+05/14/2025 12:57:47 AM INFO: Finished running singlem query-based taxonomic assignment, now running diamond ..
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_13.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_21.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_24.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_27.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_30.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_31.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_32.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 2 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_37.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 2 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_39.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_49.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_53.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_72.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_77.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_82.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_90.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_105.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_108.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_171.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_252.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 5 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_295.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_345.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_381.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 1 out of 1 sequences (100.0%) for sample singlem-genome-orfstyma9zht, package phrog_454.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_2148.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_2353.spkg
+05/14/2025 12:57:47 AM INFO: Assigning taxonomy with DIAMOND for 0 out of 1 sequences (0.0%) for sample singlem-genome-orfstyma9zht, package phrog_8940.spkg
+05/14/2025 12:57:47 AM INFO: Finished running taxonomic assignment
+05/14/2025 12:57:47 AM INFO: Demultiplexing genomes from OTU table
+05/14/2025 12:57:47 AM INFO: Finished
+05/14/2025 12:57:47 AM INFO: Writing /dev/stdout
+gene	sample	sequence	num_hits	coverage	taxonomy
+phrog_105	lambda_phage	AACAGTACCGATATTGCACCGCCAGATATTCCGGCTGGCTTTGTGGCTGTTTTCAACAGT	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes; f__novel_family_97_of_novel_order_237_of_Caudoviricetes
+phrog_108	lambda_phage	GCCGGACCGGTTTTACAAATCAGTAAGCAGGTCAGTGCGTACGCCATGGCCGGAGTGGCT	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes; f__novel_family_97_of_novel_order_237_of_Caudoviricetes
+phrog_13	lambda_phage	GTTGCTGCGCTCGATGCAAAATACACGAAGGAGTTAGCTGATGCTAAAGCTGAAAATGAT	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_171	lambda_phage	CCGTATCGCGTCGAACTGATTAGCCGCATCGGGCAGGAAGCAGTAGACGAAATCGAATCA	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_21	lambda_phage	CAGACTCGCGGTGCAAATGTGTTTTACAGCGTGATGGAGCAGATGAAGATGCTCGACACG	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_2148	lambda_phage	ATGTGGGCTGTCAAAATTGAGCAGACCAAAGACGGCAAACATTATGTCGCGGGTATTGGC	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes
+phrog_2353	lambda_phage	ACCGCCCAACTGCTGGCGGCAAATGAGCAGAAATTTAAGTTTGATCCGCTGTTTCTGCGT	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_24	lambda_phage	TGGGCGGCTGAAGACCAGCTTCGCGGGAACTGGATGGCAGGCCTGAAGTCCGGCTGGAGT	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes; f__novel_family_97_of_novel_order_237_of_Caudoviricetes
+phrog_252	lambda_phage	CCCAAACGGATGTTACGTCATAAAGCCATGATTCAGTGTGCCCGTCTGGCCTTCGGATTT	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes
+phrog_27	lambda_phage	ATATCGCAGTCGGCGTCACAGGTTGCCCGTGAGACAAAGGTACGCCGGAAACTGGTAAAG	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_295	lambda_phage	GCCTACCCAAAACTTGCTGTCGCGTATCCATCGGGTGTGCTTCCTGATATGCGAGGCTGG	5	5.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes; f__novel_family_97_of_novel_order_237_of_Caudoviricetes
+phrog_30	lambda_phage	ATTGAGATGCCGGACTTTCATCGTGAGGATGACTGGTGGCGTAACGGCCAGAATCTCTAT	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_31	lambda_phage	TGGGATGTGCTCAGCGATTTCTGCTCGGCGATGCGCTGTATGCCGGTATGGAACGGGCAG	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_32	lambda_phage	GGTAAGCAGAACACCTATTTCTCCTCACTGGATAACATGGTTGCCCAGGGCAATGTTCTG	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_345	lambda_phage	AAACGGTGCAATGAAGCCAAGTTAGAACTCGTCAGAATGAATATTATCAAGCAGCAAGGC	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_37	lambda_phage	GGCGAAGAGCTGGACAGCGATACCTGGCAGGCGGAGCTGCATATCGAAGTTTTCCTGCCT	2	2.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes
+phrog_381	lambda_phage	AGAAAGGGGATAGTGCAGCTCAGCAGTGCAACCAACAGCACGTCTGAAACGCTTGCTGCA	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes; f__novel_family_97_of_novel_order_237_of_Caudoviricetes; g__Lambdavirus
+phrog_39	lambda_phage	ATGTCATCCACGGAGTATGCCGACTGGCACCGCTTTTACAGTACCCATTATTTTCATGAT	2	2.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_454	lambda_phage	CCAACAGCACCAACCGCGCTCAGGGGAACAAACAATACCCAGATTGCGAACACCGCTTTT	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_209_of_Caudoviricetes; f__Peduoviridae; g__Xuanwuvirus
+phrog_49	lambda_phage	GGCATTCTTGCGGTTGCTGCTGACCAGACCAGCACC------ACGCTGACGTTCTACAAG	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_53	lambda_phage	AACTGCAGTGCAGGTCAGTTGCTTGCCAGTGCCGCCTCCCGGCGTCTGGTCACGCAGACC	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes; f__novel_family_97_of_novel_order_237_of_Caudoviricetes
+phrog_72	lambda_phage	GGCCAGTCAACCAGCAGGATGCGTGTAGGCGAATTTGCGGAGCTATTAGAGCTTATACAG	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_77	lambda_phage	GTTAATTCTATGCCCAGCACGAACATTATCGGGCGGAATGGGTGTGGTAAAACAACAATT	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes; f__novel_family_97_of_novel_order_237_of_Caudoviricetes; g__Lambdavirus
+phrog_82	lambda_phage	ACTGATGAGGTGCGGCAGCTGCGGCGTGGAGACACGCTGACCATCGGTGAGGAAAATTTC	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
+phrog_8940	lambda_phage	ATGACCGTGAAAACGGCCCGCCGCATTCTGGCCGCAGCACCACAGAGTGCACAGGCGCGC	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes; o__novel_order_237_of_Caudoviricetes; f__novel_family_97_of_novel_order_237_of_Caudoviricetes
+phrog_90	lambda_phage	GGCGCCGGACGCTACCAGCTTCTTTCCCGTTGGTGGGATGCCTACCGCAAGCAGCTTGGC	1	1.00	Root; d__Viruses; p__Uroviricota; c__Caudoviricetes
