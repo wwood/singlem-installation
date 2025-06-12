@@ -14,8 +14,8 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 # Put conda in path so we can use conda activate
 ENV PATH=$CONDA_DIR/bin:$PATH
 
-# install singlem and dependencies
-RUN conda create -y -c bioconda -c conda-forge -n singlem singlem'='SINGLEM_VERSION
+# install singlem and dependencies. Match this invocation to the documentation
+RUN conda create -y -c conda-forge -c bioconda -n singlem --strict-channel-priority --override-channels singlem'='SINGLEM_VERSION
 
 # Download some example data so we can test the installation
 RUN wget https://github.com/wwood/singlem/raw/1d204f7ef1b90435a51cdadc18d37791fbff4c9b/docker/test.fna
